@@ -1,0 +1,7 @@
+<h1>id:<%=@tasklist1.id%>の詳細ページ</h1>
+
+<p>タスク：<%=@tasklist1.content%></p>
+
+<%=link_to "一覧に戻る",tasklist1s_path%>
+<%=link_to "編集する",edit_tasklist1_path%>
+<%=link_to "削除する",@tasklist1,method: :delete,data:{confirm:"本当に削除してもいいですか"}%>
